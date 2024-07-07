@@ -1,0 +1,7 @@
+.container{
+    container: center;
+    max-width:400;
+    padding: 4;
+    margin:50;
+    border: solid 4 ,red
+}
