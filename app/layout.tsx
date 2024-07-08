@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Marcellus } from "next/font/google";
 import "./globals.css";
+import ResponsiveNav from "./components/Navigation/ResponsiveNav";
 
 const marcellus = Marcellus({ weight: ["400"],
   subsets:['latin']
@@ -18,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={marcellus.className}>{children}</body>
+      <body className={marcellus.className}>
+        <ResponsiveNav />
+        {children}</body>
     </html>
   );
 }
