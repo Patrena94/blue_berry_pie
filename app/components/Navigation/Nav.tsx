@@ -1,8 +1,11 @@
 import React from 'react'
 import Link from "next/link";
-import { Bars3BottomRightIcon } from '@heroicons/react/16/solid';
+// import { Bars3BottomRightIcon } from '@heroicons/react/16/solid';
+import logo1 from "./images/logos/logo1.png"
+import logo2 from "./images/logos/logo1.png"
+import { GiHamburgerMenu } from "react-icons/gi";
 interface Props{
-  openNav: () =>void;
+  openNav: () => void;
 }
 // import Image from "./images/logos";
 
@@ -22,16 +25,16 @@ const Nav = ({openNav}:Props) => {
       alt="Screenshots of the dashboard project showing desktop version" /> */}
 
         <h1 className="text-[16px] md:text-[25px] font-bold text-slate-800">
-          <span className="text-[27px] md:text-[40px] text-red-600">W</span>
+          <span className="text-[27px] md:text-[40px] text-[#670038]-600">W</span>
           ebdev.
         </h1>
         <ul className="1g:flex items-center space-x-10">
-          <li className="text-[17px] cursor-pointer text-red-500">
+          <li className="text-[17px] cursor-pointer text-[#670038]-500">
 <Link href="/">Home</Link>
 </li>
 </ul>
 <ul>
-<li className="text-[17px] cursor-pointer hover:text-red-500 transition-all duration-200">
+<li className="text-[17px] cursor-pointer hover:text-[#670038]-500 transition-all duration-200">
 <Link  href="/about">About</Link>
           </li>
           </ul>
@@ -67,8 +70,8 @@ const Nav = ({openNav}:Props) => {
           </li> 
           </ul>
           <div className="flex items-center space-x-2 md:space-x-5">
-            <Bars3BottomRightIcon onClick={openNav} className='w-[1.5] lg:hidden h-[1.5] text-slate-900 cursor-pointer' />
-            </div>
+            <GiHamburgerMenu onClick={openNav} className='w-[1.5] lg:hidden h-[1.5] text-slate-900 cursor-pointer' />
+            </div> 
       </div>        
     </div>
     </div>
@@ -76,4 +79,3 @@ const Nav = ({openNav}:Props) => {
 };
 
 export default Nav
-
