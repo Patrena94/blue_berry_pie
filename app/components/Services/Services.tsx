@@ -14,10 +14,10 @@ const Services = () => {
         <ServicesCard  title="Buyer" image={Design.src} />
         </div>
         <div>
-        <ServicesCard  title="Seller" image={Design.src} />
+        <ServicesCard  title="Seller" image={Design1.src} />
         </div>
         <div>
-        <ServicesCard  title="Renter" image={Design.src} />
+        <ServicesCard  title="Renter" image={Design2.src} />
         </div>
         <div>
         <ServicesCard  title="Investor" image={Design.src} />
